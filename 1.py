@@ -32,12 +32,30 @@
 #     print("Odd")
 
 #Prog 6
-n1=int(input())
-n2=int(input())
-n3=int(input())
-max=n1
-if n2>max:
-    max=n2
-if n3>max:
-    max=n3
-print(max)
+# n1=int(input())
+# n2=int(input())
+# n3=int(input())
+# max=n1
+# if n2>max:
+#     max=n2
+# if n3>max:
+#     max=n3
+# print(max)
+
+#Prog 7
+#ax2+bx+c
+import math
+a=int(input())
+b=int(input())
+c=int(input())
+d= b**2-4*a*c
+if(d==0):
+    r=b/(2*a)
+    print(r)
+elif(d>0):
+    r1= (-b+math.sqrt(d))/(2*a)
+    r2= (-b-math.sqrt(d))/(2*a)
+    print(r1,r2)
+else:
+    print("Imaginary roots")
+
